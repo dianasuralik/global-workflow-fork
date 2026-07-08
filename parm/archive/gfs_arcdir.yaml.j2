@@ -36,6 +36,8 @@ copy_opt:
     {% if DO_JEDIATMVAR == True %}
     - ["{{ COMIN_ATMOS_ANALYSIS }}/{{ head }}atmos_analysis.ioda_hofx.tar.gz",
        "{{ ARCDIR }}/atmstat.{{ RUN }}.{{ cycle_YMDH }}"]
+    - ["{{ COMIN_ATMOS_ANALYSIS }}/{{ head }}varbc_params.tar",
+       "{{ ARCDIR }}/varbc.{{ RUN }}.{{ cycle_YMDH }}"]
     {% else %}
     - ["{{ COMIN_ATMOS_ANALYSIS }}/{{ head }}gsistat.txt",
        "{{ ARCDIR }}/gsistat.{{ RUN }}.{{ cycle_YMDH }}"]
